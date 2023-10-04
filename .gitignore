@@ -38,6 +38,8 @@ nb-configuration.xml
 .direnv/
 **/:w
 
+?/
+
 .settings
 
 *.mustache~
