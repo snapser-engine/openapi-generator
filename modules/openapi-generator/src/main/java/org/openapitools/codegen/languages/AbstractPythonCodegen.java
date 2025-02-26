@@ -1207,8 +1207,8 @@ public abstract class AbstractPythonCodegen extends DefaultCodegen implements Co
                 return String.format(Locale.ROOT, "%s(%s)", "conint",
                         StringUtils.join(fieldCustomization, ", "));
             } else {
-                pydanticImports.add("StrictInt");
-                return "StrictInt";
+                pydanticImports.add("conint");
+                return "conint()";
             }
         } else if (cp.isBinary || cp.isByteArray) {
             if (cp.hasValidation) {
@@ -1492,8 +1492,8 @@ public abstract class AbstractPythonCodegen extends DefaultCodegen implements Co
                 return String.format(Locale.ROOT, "%s(%s)", "conint",
                         StringUtils.join(fieldCustomization, ", "));
             } else {
-                pydanticImports.add("StrictInt");
-                return "StrictInt";
+                pydanticImports.add("conint");
+                return "conint()";
             }
         } else if (cp.isBinary || cp.isByteArray) {
             if (cp.hasValidation) {
